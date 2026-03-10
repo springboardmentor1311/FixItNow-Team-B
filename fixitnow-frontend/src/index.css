@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.register-file-input::file-selector-button {
+  background-color: #ffffff;
+  color: #000000 !important;
+  -webkit-text-fill-color: #000000;
+}
+
+.register-file-input::-webkit-file-upload-button {
+  background-color: #ffffff;
+  color: #000000 !important;
+  -webkit-text-fill-color: #000000;
+}
