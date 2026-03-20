@@ -1,48 +1,28 @@
-# 🔧 FixItNow – Your Trusted Local Service Platform
+# FixItNow Team B
 
-FixItNow is a modern web application designed to connect users with trusted local service professionals such as electricians, plumbers, carpenters, appliance repair technicians, painters, and more.  
+Clean project structure:
 
-The platform simplifies the process of finding reliable help for everyday problems by providing an easy-to-use interface for browsing, booking, and managing service requests.
+- `backend/FixItNow` - Spring Boot backend
+- `frontend/fixitnow-frontend` - React frontend
+- `database/fixitnow.sql` - SQL dump
 
----
+## Run Backend
 
-## 📌 About the Application
+```powershell
+cd backend/FixItNow
+$env:JAVA_HOME='C:\Users\Asus\AppData\Local\Programs\Eclipse Adoptium\jdk-25.0.2.10-hotspot'
+mvn spring-boot:run
+```
 
-FixItNow bridges the gap between customers and skilled professionals in their locality. Instead of relying on scattered contacts or unreliable listings, users can explore verified service providers and request services directly through the platform.
+## Run Frontend
 
-The application is built with a responsive front-end architecture and structured component-based design, ensuring smooth user experience across devices.
+```powershell
+cd frontend/fixitnow-frontend
+npm install
+npm start
+```
 
----
+## Database
 
-## ✨ Core Features
-
-### 👤 User Features
-- Browse multiple service categories
-- View available service providers
-- Search and filter professionals
-- Submit service requests
-- Manage booking history
-- Responsive design for mobile and desktop
-
-### 🧑‍🔧 Service Provider Features
-- Register and create a professional profile
-- List services offered
-- Manage availability
-- View and respond to service requests
-
-### 📊 Application Highlights
-- Clean and user-friendly UI
-- Structured React component architecture
-- Organized routing for seamless navigation
-- Scalable design for future feature additions
-
----
-
-## 🧩 Technology Stack
-
-- **Frontend:** React.js  
-- **Styling:** CSS  
-- **Package Manager:** npm  
-- **Development Server:** Node environment  
-
-
+Backend defaults to embedded H2 for local run.
+To use MySQL, import `database/fixitnow.sql` and run backend with MySQL profile/env vars.
